@@ -1,0 +1,61 @@
+Jan 8, 2018
+CodeSchool gives pillars of MEAN, working on each language separately.
+Finish codeSchool move on to udemy
+
+Full Stack development: 
+MVC - way of organizing full stack
+front end - visual 
+back end - processes and data stored
+--> pull database away from end user, user needs to be able to send info into the database, and pull from it 
+MVC:
+Model
+View 
+Controller
+
+User 
+Brower - sends and retreves request, table at a restaurant
+View  - Front End, waitress
+Controller - Back End, makes it happen, cook
+Model - Database, stock room
+
+
+Standard Request:
+www.mywebsite.com/cat.png
+
+user > browser > server > index.html > browser > user
+                                    > browser > server > cat.png > browser > user
+Every request sends back a file.
+
+MVC Request
+Scenario 1:
+user > browser > server > controller (in app, decides what to do, check code, ex: homepage) > view (here's all the code for the homepage, organizes) > browser > user
+
+Scenario 2:
+user > browser (recipes for making a sandwich > server > controller (needs all the recipes) > model (pulls recipes from database) > controller (filters all recipes for sandwiches with specific ingredients) > view (organizes info) > browser >user
+Only the controller touches the model (database), user can send info to the controller and recieve info from view, but cannot contact database directly.
+Safety mechanism to protect database
+
+MEAN stack
+M - MongoDB - database that stores app
+E - Express.js - robust features
+A - Angular.js - expanded html library
+N - Node.js - server-side code framework for fast scalable network apps
+
+Installing MongoDB, journal takes up 2gb - all the space on a c9
+22 min in
+
+Jan 9, 2018 Notes
+Angular.js - not for mobile programing 
+
+Angular.js - View
+Node.js - Controller
+MongoDB - Model
+Express.js - Router, part of the Controller 
+            >   parses url
+            >   What data do I send (user #, query search)? 
+            >   What js file in Node to I send it to?
+            >   Send data to specific file in the controller, allows for multiple controllers
+            
+
+user > browser > Router(Express) > Controller(Node) > Model(MongoDB) > Controller(Node) > View(Angular) > browser > user
+
